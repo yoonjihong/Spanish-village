@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('NotoSansKR'), url('../fonts/NotoSansKR-Thin.otf');
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NotoSansKR'), url('../fonts/NotoSansKR-Regular.otf');
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('NotoSansKR'), url('../fonts/NotoSansKR-Medium.otf');
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('NotoSansKR'), url('../fonts/NotoSansKR-Bold.otf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "NotoSansKR";
+}
+
+.rap {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 헤더 */
+.header {
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  background: white;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+
+}
+
+.header .logo {
+  width: 170px;
+}
+
+.header .menu {
+  font-size: 18px;
+}
+
+
+/* 메인페이지-배너 */
+.banner {
+  width: 100%;
+  height: 850px;
+  position: relative;
+  
+}
+
+.banner .slide {
+  width: 100%;
+  height: 100%;
+}
+
+.banner .slide > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(40%);
+}
+
+.banner .slide > div:nth-child(1) {
+  background-image: url('../images/DSC_1555.jpg');
+}
+
+.banner .title {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  color: white;
+  transform: translateX(-50%);
+}
+
+.banner h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 8px;
+}
+
+.banner span {
+  display: inline-block;
+  position: relative;
+}
+
+.banner span:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -6px);
+}
+
+.banner .sp {
+  margin-right: 10px;
+}
+
+.banner h1 {
+  font-size: 70px;
+}
+
+.banner .title div {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 18px;
+  padding-top: 24px;
+
+}
+
+.banner p {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.banner p:before {
+  margin-bottom: 24px;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: white;
+}
