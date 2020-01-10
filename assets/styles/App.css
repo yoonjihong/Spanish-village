@@ -58,7 +58,7 @@ a {
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
-  padding: 15px 40px;
+  padding: 13px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,25 +67,39 @@ a {
 }
 
 .header .logo {
-  width: 170px;
+  width: 150px;
 }
 
 .header .menu {
   font-size: 18px;
 }
 
+.header .menu a {
+  padding: 0 20px;
+}
+
 
 /* 메인페이지-배너 */
 .banner {
   width: 100%;
-  height: 850px;
+  height: 900px;
   position: relative;
-  
+}
+
+.banner.sub {
+  height: 350px;
+  text-align: center;
 }
 
 .banner .slide {
   width: 100%;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.sub.banner .slide {
+  padding: 30px;
 }
 
 .banner .slide > div {
@@ -97,19 +111,23 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(40%);
+  filter: brightness(45%);
 }
 
 .banner .slide > div:nth-child(1) {
-  background-image: url('../images/DSC_1555.jpg');
+  background-image: url('../images/banner2.png');
 }
 
 .banner .title {
   position: absolute;
-  bottom: 70px;
+  bottom: 180px;
   left: 50%;
   color: white;
   transform: translateX(-50%);
+}
+
+.sub.banner .title {
+  bottom: 50px;
 }
 
 .banner h2 {
@@ -140,20 +158,19 @@ a {
 }
 
 .banner h1 {
-  font-size: 70px;
+  font-size: 64px;
 }
 
 .banner .title div {
   font-style: italic;
   font-weight: 100;
-  font-size: 18px;
+  font-size: 20px;
   padding-top: 24px;
-
 }
 
 .banner p {
   font-size: 24px;
-  margin-bottom: 4px;
+  margin-bottom: -4px;
 }
 
 .banner p:before {
@@ -163,4 +180,122 @@ a {
   width: 100px;
   height: 1px;
   background: white;
+}
+
+/* home-container */
+.home-container {
+  position: relative;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.home-container:before,
+.home-container:after {
+  content: '';
+  display: block;
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -8999;
+}
+
+.home-container:before {
+  /* background: #746d6a; */
+  left: 0;
+}
+
+.home-container:after {
+  /* background: #c49555; */
+  right: 0;
+}
+
+.menubox {
+  display: flex;
+}
+
+.menubox > div {
+  width: 33.333%;
+  height: 100%;
+  padding: 40px 50px;
+  color: white;
+}
+
+.menubox > div:nth-child(1) {
+  background: #907354;
+}
+
+.menubox > div:nth-child(2) {
+  background: #434343;
+}
+
+.menubox > div:nth-child(3) {
+  background: #deaf6c;
+}
+
+.menubox h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container-title {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.container-title p {
+  font-size: 18px;
+  color: #999;
+  font-weight: 300;
+  margin-bottom: -6px;
+}
+
+.container-title h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* 마을소개 */
+.info-container {
+}
+
+.info-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-1 {
+  display: flex;
+  font-size: 20px;
+  color: rgba(0,0,0,0.8);
+}
+
+.info-1 img {
+  width: 45%;
+}
+
+.info-1 > div {
+  width: 55%;
+  padding-left: 40px;
+}
+
+.info-1 > div > div {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding: 13px 0;
+  font-size: 16px;
+}
+
+.info-1 > div > div:last-child {
+  border-bottom: none;
+}
+
+.info-1 > div h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+}
+
+.info-1 > div p {
+  font-size: 20px;
+  font-weight: 500;
 }
