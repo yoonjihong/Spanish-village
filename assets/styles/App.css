@@ -8,6 +8,13 @@
 @font-face {
   font-family: 'NotoSansKR';
   font-style: normal;
+  font-weight: 300;
+  src: local('NotoSansKR'), url('../fonts/NotoSansKR-Light.otf');
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
   font-weight: 400;
   src: local('NotoSansKR'), url('../fonts/NotoSansKR-Regular.otf');
 }
@@ -24,6 +31,13 @@
   font-style: normal;
   font-weight: 700;
   src: local('NotoSansKR'), url('../fonts/NotoSansKR-Bold.otf');
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 900;
+  src: local('NotoSansKR'), url('../fonts/NotoSansKR-Black.otf');
 }
 
 
@@ -268,6 +282,8 @@ a {
   display: flex;
   font-size: 20px;
   color: rgba(0,0,0,0.8);
+  margin-bottom: 60px;
+  margin-top: 70px;
 }
 
 .info-1 img {
@@ -291,11 +307,30 @@ a {
 
 .info-1 > div h2 {
   font-size: 14px;
-  font-weight: 500;
-  color: #777;
+  font-weight: 300;
+  color: #bc9f77;
 }
 
 .info-1 > div p {
   font-size: 20px;
   font-weight: 500;
+  color: #555;
+  font-weight: 300;
+}
+
+h2.number {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 900;
+  /* color: #bc9f77; */
+}
+
+h2.number:after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 2px;
+  height: 100px;
+  background: #bc9f77;
+  margin-top: 20px;
 }
