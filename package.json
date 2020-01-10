@@ -41,7 +41,5 @@
   "devDependencies": {
     "eslint-plugin-react-hooks": "^2.3.0"
   },
-
-  /* "homepage": "https://yoonjihong.github.io/Spanish-village" */
-  "homepage": "https://spainvillage.com"
+  "homepage": "https://yoonjihong.github.io/Spanish-village"
 }
