@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
 import Home from './pages/Home.js'
@@ -8,11 +8,11 @@ import Home from './pages/Home.js'
 import './assets/styles/App.scss'
 
 ReactDOM.render(
-	<Router basename="/Spanish-village">
+	<HashRouter basename="/spainvillage">
 		<Switch>
 			<Route path="/" exact component={Home} />
 		</Switch>
-	</Router>
+	</HashRouter>
 , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
