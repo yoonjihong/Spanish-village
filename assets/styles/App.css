@@ -364,4 +364,16 @@ h2.number:after {
   margin-top: 80px;
 }
 
-.info-2_title h2:before {}
+.info-2_title h2:before {
+  background: url('../images/DSC_1538.jpg');
+  background-position: 0 50%;
+}
+
+.info-3_title {
+  margin-top: 80px;
+}
+
+.info-3_title h2:before {
+  background: url('../images/DSC_1570.jpg');
+  background-position: 0 65%;
+}
