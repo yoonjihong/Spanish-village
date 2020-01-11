@@ -50,6 +50,7 @@
 
 body {
   font-family: "NotoSansKR";
+  font-size: 16px;
 }
 
 ul {
@@ -98,7 +99,7 @@ a {
 }
 
 .header .menu {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .header .menu a {
@@ -158,7 +159,7 @@ a {
 }
 
 .banner h2 {
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 100;
   margin-bottom: 8px;
 }
@@ -185,18 +186,18 @@ a {
 }
 
 .banner h1 {
-  font-size: 64px;
+  font-size: 4em;
 }
 
 .banner .title div {
   font-style: italic;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 1.25em;
   padding-top: 24px;
 }
 
 .banner p {
-  font-size: 24px;
+  font-size: 1.5em;
   margin-bottom: -4px;
 }
 
@@ -261,7 +262,7 @@ a {
 }
 
 .menubox h2 {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 400;
 }
 
@@ -271,7 +272,7 @@ a {
 }
 
 .container-title p {
-  font-size: 18px;
+  font-size: 1.125em;
   color: #999;
   font-weight: 300;
   margin-bottom: -6px;
@@ -334,7 +335,7 @@ a {
 
 h2.number {
   text-align: center;
-  font-size: 80px;
+  font-size: 5em;
   font-weight: 900;
   position: relative;
   /* color: #bc9f77; */
@@ -480,7 +481,21 @@ body.isSide .container {
   right: 60vw;
 }
 
+@media (max-width: 460px) {
+  .banner .title {
+    font-size: 8px;
+  }
+}
+
 @media (max-width: 800px) {
+  body {
+    font-size: 10px;
+  }
+  .banner .title.rap {
+    bottom: 370px;
+    max-width: calc(100% - 20px);
+  }
+
   .mobile {
     display: flex;
   }
@@ -520,7 +535,35 @@ body.isSide .container {
     margin-bottom: 5px;
   }
 
+  .home-container {
+    position: absolute;
+    transform: translateY(-100%);
+  }
+
   .banner {
     height: 700px;
+  }
+
+  .menubox {
+    flex-direction: column;
+  }
+  .menubox > div {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 13px;
+  }
+
+  footer {
+    padding-bottom: 0;
+  }
+
+  footer > div {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  footer > div a {
+    display: none;
+    padding-bottom: 12px;
   }
 }
