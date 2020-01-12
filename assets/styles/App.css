@@ -407,7 +407,7 @@ h2.number:after {
 
 footer {
   border-top: 1px solid #999;
-  padding-bottom: 40px;
+  padding: 20px 0;
 }
 
 footer > div {
@@ -425,7 +425,7 @@ footer a img {
 
 footer ul {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 footer li {
@@ -480,6 +480,11 @@ footer li:not(:last-child):after {
   border-bottom: 1px solid rgba(255, 255, 255, 0.417);
 }
 
+.sidebar-rap .sitemaps li {
+  padding: 4px 0px;
+  font-size: 0.8em;
+}
+
 .sidebar-rap > ul > li {
   padding: 12px;
   padding-top: 0;
@@ -493,7 +498,7 @@ footer li:not(:last-child):after {
 
 .sidebar-rap > ul > li > ul > li.first {
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .sidebar-rap > ul > li > ul > li:not(.first) {
   padding-left: 6px;
@@ -622,7 +627,7 @@ body.isSide .container {
   }
 
   footer {
-    padding-bottom: 0;
+    padding: 0;
   }
 
   footer > div {
