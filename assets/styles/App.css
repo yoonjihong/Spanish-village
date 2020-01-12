@@ -51,6 +51,7 @@
 body {
   font-family: "NotoSansKR";
   font-size: 16px;
+  position: relative;
 }
 
 ul {
@@ -458,11 +459,11 @@ footer li:not(:last-child):after {
 
 .sidebar {
   font-size: 16px;
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   width: 60vw;
-  height: 100vh;
+  height: 100%;
   background: #f5b762;
   color:white;
   font-weight: 200;
@@ -606,6 +607,18 @@ body.isSide .container {
     width: 100%;
     padding: 18px 20px;
     font-size: 13px;
+  }
+
+  .info-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-3 img {
+    width: 80%;
+  }
+  .info-3 > div {
+    width: 80%;
+    padding-left: 0;
   }
 
   footer {
