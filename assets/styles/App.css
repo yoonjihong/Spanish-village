@@ -141,7 +141,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(45%);
+  /* filter: brightness(45%); */
 }
 
 .banner .slide > div:nth-child(1) {
@@ -385,7 +385,7 @@ h2.number:after {
   background-size: cover;
   top: 0;
   z-index: -10;
-  filter: brightness(50%);
+  /* filter: brightness(50%); */
 }
 
 .info-2_title {
