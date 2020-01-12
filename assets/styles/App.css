@@ -52,6 +52,7 @@ body {
   font-family: "NotoSansKR";
   font-size: 16px;
   position: relative;
+  overflow-x: hidden;
 }
 
 ul {
