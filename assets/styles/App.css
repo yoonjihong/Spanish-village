@@ -242,22 +242,22 @@ a {
   display: flex;
 }
 
-.menubox > div {
+.menubox > a {
   width: 33.333%;
   height: 100%;
   padding: 40px 50px;
   color: white;
 }
 
-.menubox > div:nth-child(1) {
+.menubox > a:nth-child(1) {
   background: #907354;
 }
 
-.menubox > div:nth-child(2) {
+.menubox > a:nth-child(2) {
   background: #434343;
 }
 
-.menubox > div:nth-child(3) {
+.menubox > a:nth-child(3) {
   background: #deaf6c;
 }
 
@@ -331,6 +331,18 @@ a {
   font-weight: 500;
   color: #555;
   font-weight: 300;
+}
+
+.info-4 > p {
+  padding: 2em 0;
+  font-size: 1.4em;
+  line-height: 1.9em;
+  text-align: center;
+  font-weight: 100;
+}
+
+.info-4 > p b {
+  font-weight: 400;
 }
 
 h2.number {
@@ -433,6 +445,7 @@ footer li:not(:last-child):after {
 }
 
 .sidebar {
+  font-size: 16px;
   position: fixed;
   right: 0;
   top: 0;
@@ -547,7 +560,7 @@ body.isSide .container {
   .menubox {
     flex-direction: column;
   }
-  .menubox > div {
+  .menubox > a {
     width: 100%;
     padding: 18px 20px;
     font-size: 13px;
