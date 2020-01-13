@@ -78,6 +78,12 @@ a {
   color: inherit;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 40px;
+  font-family: "malgungothic"
+}
+
 /* 헤더 */
 .header {
   box-shadow: 0 0 10px rgba(0,0,0,.1);
