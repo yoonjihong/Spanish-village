@@ -580,6 +580,47 @@ body.isSide .container {
   top: 50%;
 }
 
+
+.andalucia {
+  padding: 0 0 4rem 0;
+}
+
+.andalucia-video {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.andalucia-video video {
+  width: 100%;
+}
+
+.andalucia-info + .andalucia-info {
+  margin-top: 2rem;
+}
+
+.andalucia-info-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.andalucia-info li {
+  list-style:circle;
+}
+
+.andalucida-info-list-wrap {
+  padding: 1rem 2rem;
+  border: 1px solid #eee;
+}
+
+.andalucida-info-list-wrap > li {
+  padding: 0.4rem 0;
+}
+
+.andalucida-info-list-wrap > li > ul {
+  padding: 0 0 0 1rem;
+}
+
 @media (max-width: 460px) {
   .banner .title {
     font-size: 8px;
